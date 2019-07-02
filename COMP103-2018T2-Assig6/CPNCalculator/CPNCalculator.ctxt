@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=CPNCalculator
+comment0.text=\ \n\ Calculator\ for\ Cambridge-Polish\ Notation\ expressions\n\ User\ can\ type\ in\ an\ expression\ (in\ CPN)\ and\ the\ program\n\ will\ compute\ and\ print\ out\ the\ value\ of\ the\ expression.\n\ The\ template\ is\ based\ on\ the\ version\ in\ the\ lectures,\n\ \ which\ only\ handled\ +\ -\ *\ /,\ and\ did\ not\ do\ any\ checking\n\ \ for\ valid\ expressions\n\ The\ program\ should\ handle\ a\ wider\ range\ of\ operators\ and\n\ \ check\ and\ report\ certain\ kinds\ of\ invalid\ expressions\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Main\ Read-evaluate-print\ loop\n\ Reads\ an\ expression\ from\ the\ user\ then\ evaluates\ it\ and\ prints\ the\ result\n\ Invalid\ expressions\ could\ cause\ errors\ when\ reading.\n\ The\ try-catch\ prevents\ these\ errors\ from\ crashing\ the\ programe\ -\ \n\ \ the\ error\ is\ caught,\ and\ a\ message\ printed,\ then\ the\ loop\ continues.\n
+comment2.params=sc
+comment2.target=GTNode\ readExpr(java.util.Scanner)
+comment2.text=\n\ Recursively\ construct\ expression\ tree\ from\ scanner\ input\n
+comment3.params=expr
+comment3.target=double\ evaluate(GTNode)
+comment3.text=\n\ Evaluate\ an\ expression\ and\ return\ the\ value\n\ Returns\ Double.NaN\ if\ the\ expression\ is\ invalid\ in\ some\ way.\n
+comment4.params=expr\ brack
+comment4.target=void\ printExpression(GTNode,\ boolean)
+comment4.text=\n\ Prints\ the\ expression\ in\ a\ reasonable\ fasion,\ takes\ the\ current\ expression\ and\ a\ boolean\ as\ the\ parameter,\n\ the\ boolean\ is\ true\ if\ it\ is\ in\ the\ middle\ of\ an\ expression,\ and\ a\ furter\ expression\ requires\ a\ bracket.\n
+numComments=5
