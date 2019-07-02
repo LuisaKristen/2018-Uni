@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ElementInfo
+comment0.text=\ \n\ Represents\ information\ about\ an\ atomic\ element\:\n\ \ the\ color\ and\ size\ of\ the\ circles\ for\ rendering\ it\ on\ the\ graphics\ pane.\n\ \ \n
+comment1.params=element\ radius\ color
+comment1.target=ElementInfo(java.lang.String,\ double,\ java.awt.Color)
+comment1.text=\ \n\ Constructor\ requires\ the\ name\ of\ the\ element,\ the\ radius,\ and\ a\ color.\n
+comment2.params=
+comment2.target=java.lang.String\ getElement()
+comment3.params=
+comment3.target=double\ getRadius()
+comment4.params=
+comment4.target=java.awt.Color\ getColor()
+numComments=5

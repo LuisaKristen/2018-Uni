@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=MeasuringQueues
+comment0.text=\ \n\ \ Measures\ the\ performance\ of\ different\ ways\ of\ doing\ a\ priority\ queue\ of\ Patients\n\ \ Uses\ a\ cutdown\ version\ of\ Patient\ that\ has\ nothing\ in\ it\ but\ a\ priority\ (so\ it\ takes\n\ \ \ minimal\ time\ to\ construct\ a\ new\ Patient).\n\ \ The\ Patient\ constructor\ doesn't\ need\ any\ arguments\n\ \ Remember\ that\ small\ priority\ values\ are\ the\ highest\ priority\ -\ 1\ is\ higher\ priority\ than\ 10.\n\ \ Algorithms\ to\ test\ and\ measure\:\n\ \ \ \ \ \ Use\ a\ built-in\ PriorityQueue\n\ \ \ \ \ \ Use\ an\ ArrayList,\ with\ queue's\ head\ at\ 0,\ \ \ sorting\ when\ you\ add\ an\ item.\n\ \ \ \ \ \ Use\ an\ ArrayList,\ with\ queue's\ head\ at\ end,\ sorting\ when\ you\ add\ an\ item.\n\ \ Each\ method\ should\ have\ an\ items\ parameter,\ which\ is\ a\ collection\ of\ Patients\n\ \ \ \ that\ should\ be\ initially\ added\ to\ the\ queue\ (eg\ \ new\ PriorityQueue<Patient>(items);\ or\n\ \ \ \ new\ ArrayList<Patient>(items))\n\ \ \ \ It\ should\ then\ repeatedly\ dequeue\ a\ patient\ from\ the\ queue,\ and\ enqueue\ a\ new\ Patient().\ \n\ \ \ \ It\ should\ do\ this\ 100,000\ times.\n\ \ \ \ (the\ number\ of\ times\ can\ be\ changed\ using\ the\ textField)\n\ \ To\ test\ your\ methods,\ you\ should\ have\ debugging\ statements\ such\ as\ UI.println(queue)\n\ \ \ in\ the\ loop\ to\ print\ out\ the\ state\ of\ the\ queue.\ You\ could\ comment\ them\ out\ before\ measuring.\n
+comment1.params=
+comment1.target=MeasuringQueues()
+comment1.text=\n\ Construct\ a\ new\ MeasuringQueues\ object\n
+comment2.params=
+comment2.target=void\ setupGUI()
+comment2.text=\n\ Setup\ the\ GUI\n
+comment3.params=patients
+comment3.target=void\ useQueuesPQ(java.util.Collection)
+comment3.text=\n\ Create\ a\ priority\ queue\ using\ a\ PriorityQueue,\ \n\ adding\ all\ the\ patients\ in\ the\ collection\ to\ the\ queue.\n\ (n\ will\ be\ the\ size\ of\ the\ the\ collection\ in\ the\ patients\ parameter).\n\ Then,\ dequeue\ and\ enqueue\ TIMES\ times.\n
+comment4.params=patients
+comment4.target=void\ useQueuesALEnd(java.util.Collection)
+comment4.text=\n\ Create\ a\ queue\ using\ an\ ArrayList\ with\ the\ head\ at\ the\ end.\n\ Make\ a\ new\ ArrayList\ using\ all\ the\ patients\ in\ the\ collection,\n\ and\ then\ sorting\ the\ list.\n\ Then,\ dequeue\ and\ enqueue\ TIMES\ times.\n\ (n\ will\ be\ the\ size\ of\ the\ the\ collection\ in\ the\ patients\ parameter).\n\ Note\:\ Head\ of\ queue\ is\ at\ the\ end\ of\ the\ list,\ \n\ so\ we\ need\ to\ sort\ in\ the\ reverse\ order\ of\ Patients\ (so\ the\ smallest\ value\ comes\ at\ the\ end)\n
+comment5.params=patients
+comment5.target=void\ useQueuesALStart(java.util.Collection)
+comment5.text=\n\ Create\ a\ queue\ using\ an\ ArrayList\ with\ the\ head\ at\ the\ start.\n\ Head\ of\ queue\ is\ at\ the\ start\ of\ the\ list\n\ Make\ a\ new\ ArrayList\ using\ all\ the\ patients\ in\ the\ collection,\n\ and\ then\ sorting\ the\ list.\n\ Then,\ dequeue\ and\ enqueue\ TIMES\ times.\n\ (n\ will\ be\ the\ size\ of\ the\ the\ collection\ in\ the\ patients\ parameter).\n
+comment6.params=
+comment6.target=void\ measure()
+comment6.text=\n\ For\ a\ sequence\ of\ values\ of\ n,\ from\ 1000\ to\ 1024000,\n\ \ -\ Construct\ a\ collection\ of\ n\ Patients\ (This\ step\ shouldn't\ be\ included\ in\ the\ time\ measurement)\n\ \ -\ call\ each\ of\ the\ methods,\ passing\ the\ collection,\ and\ measuring\n\ \ \ \ how\ long\ each\ method\ takes\ to\ dequeue\ and\ enqueue\ a\ Patient\ 100,000\ times\n
+comment7.params=
+comment7.target=void\ test()
+comment7.text=\n\ Method\ for\ testing\ the\ methods\ on\ short\ queues,\ to\ make\ sure\ that\ they\ work.\n\ Make\ sure\ you\ change\ the\ value\ of\ TIMES\ to\ something\ small,\ like\ 10,\n\ And\ include\ debugging\ println's\ in\ the\ methods\n
+comment8.params=arguments
+comment8.target=void\ main(java.lang.String[])
+numComments=9

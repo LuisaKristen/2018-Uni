@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Person
+comment0.text=\n\ Person\n\ Has\ details\ of\ one\ person\ in\ the\ database.\n\ Must\ have\ the\ name\ and\ year\ of\ birth.\n\ May\ have\ the\ names\ of\ the\ mother\ and\ the\ father\n\ \ (null\ if\ they\ are\ not\ known)\n\ Has\ a\ Set\ of\ names\ of\ the\ children\ (which\ may\ be\ empty)\n
+comment1.params=name\ dob\ mother\ father
+comment1.target=Person(java.lang.String,\ int,\ java.lang.String,\ java.lang.String)
+comment1.text=\n\ Create\ a\ person\ with\ name,\ dob,\ mother,\ and\ father.\n\ if\ mother\ or\ father\ are\ "-",\ then\ leaves\ the\ field\ null.\n\ The\ children\ field\ will\ contain\ an\ empty\ set.\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\n\ Getters\n
+comment3.params=
+comment3.target=int\ getDOB()
+comment4.params=
+comment4.target=java.lang.String\ getMother()
+comment5.params=
+comment5.target=java.lang.String\ getFather()
+comment6.params=
+comment6.target=java.util.Set\ getChildren()
+comment6.text=\n\ Returns\ an\ unmodifiable\ version\ of\ the\ set\ of\ children,\n\ Other\ parts\ of\ the\ program\ can\ access\ the\ children\ this\ way,\n\ and\ can\ loop\ through\ the\ set\ of\ children\n\ cannot\ add\ or\ remove\ children\ from\ the\ person\ through\ this\ set.\n
+comment7.params=child
+comment7.target=void\ addChild(java.lang.String)
+comment7.text=\n\ Add\ a\ new\ child\ (name)\ to\ the\ set\ of\ children\n\ Has\ no\ effect\ if\ name\ is\ already\ listed\ as\ a\ child\n
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment8.text=\n\ Returns\ a\ string\ containing\ the\ details\ of\ a\ person.\n\ Note\ that\ format\ is\ like\ printf,\ but\ returns\ the\ String\n\ instead\ of\ printing\ it.\n\ if\ the\ mother\ and/or\ father\ are\ null,\ then\ their\ names\n\ will\ be\ given\ as\ "-\ \ \ \ "\n
+numComments=9

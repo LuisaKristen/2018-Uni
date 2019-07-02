@@ -1,0 +1,34 @@
+#BlueJ class context
+comment0.target=EmergencyRoom
+comment0.text=\n\ Simulation\ of\ an\ EmergencyRoom,\n\ The\ Emergency\ room\ has\ a\ collection\ of\ departments\ for\ treating\ patients\ (ER\ beds,\ X-ray,\n\ \ Operating\ Theatre,\ MRI,\ Ultrasound,\ etc).\n\ \n\ When\ patients\ arrive\ at\ the\ emergency\ room,\ they\ are\ immediately\ assessed\ by\ the\n\ \ triage\ team\ who\ determine\ the\ priority\ of\ the\ patient\ and\ a\ sequence\ of\ treatments\n\ \ that\ the\ patient\ will\ need.\n\n\ Each\ department\ has\n\ \ -\ a\ Set\ of\ patients\ that\ they\ are\ currently\ treating,\n\ \ \ \ (There\ is\ a\ maximum\ size\ of\ this\ set\ for\ each\ department)\n\ \ -\ a\ Queue\ for\ the\ patients\ waiting\ for\ that\ department.\n\n\ The\ departments\ should\ be\ in\ a\ Map,\ with\ the\ department\ name\ (\=\ treatment\ type)\ as\ the\ key.\n\ \n\ When\ a\ patient\ has\ finished\ a\ treatment,\ they\ should\ be\ moved\ to\ the\n\ \ \ department\ for\ the\ next\ treatment\ they\ require.\n\n\ When\ a\ patient\ has\ finished\ all\ their\ treatments,\ they\ should\ be\ discharged\:\n\ \ -\ a\ record\ of\ their\ total\ time,\ treatment\ time,\ and\ wait\ time\ should\ be\ printed,\n\ \ -\ the\ details\ should\ be\ added\ to\ the\ statistics.\ \n\n\n\ The\ main\ simulation\ should\ consist\ of\n\ a\ setting\ up\ phase\ which\ initialises\ all\ the\ queues,\n\ a\ loop\ that\ steps\ through\ time\:\n\ \ \ -\ advances\ the\ time\ by\ one\ "tick"\n\ \ \ -\ Processes\ one\ time\ tick\ for\ each\ patient\ currently\ in\ each\ department\n\ \ \ \ \ (either\ making\ them\ wait\ if\ they\ are\ on\ the\ queue,\ or\n\ \ \ \ \ \ advancing\ their\ treatment\ if\ they\ are\ being\ treated)\n\ \ \ -\ Checks\ for\ any\ patients\ who\ have\ completed\ their\ current\ treatment,\n\ \ \ \ \ \ and\ remove\ from\ the\ department\n\ \ \ -\ Move\ all\ Patients\ that\ completed\ a\ treatment\ to\ their\ next\ department\ (or\ discharge\ them)\n\ \ \ -\ Checks\ each\ department,\ and\ moves\ patients\ from\ the\ front\ of\ the\n\ \ \ \ \ \ \ waiting\ queues\ into\ the\ Sets\ of\ patients\ being\ treated,\ if\ there\ is\ room\n\ \ \ -\ Gets\ any\ new\ patient\ that\ has\ arrived\ (depends\ on\ arrivalInterval)\ and\n\ \ \ \ \ \ \ puts\ them\ on\ the\ appropriate\ queue\n\ \ \ -\ Redraws\ all\ the\ departments\ -\ showing\ the\ patients\ being\ treated,\ and\n\ \ \ \ \ the\ patients\ waiting\ in\ the\ queues\n\ \ \ -\ Pauses\ briefly\n\n\ The\ simple\ simulation\ just\ has\ one\ department\ -\ ER\ beds\ that\ can\ treat\ 5\ people\ at\ once.\n\ Patients\ arrive\ and\ need\ treatment\ for\ random\ times.\n
+comment1.params=
+comment1.target=EmergencyRoom()
+comment1.text=\n\ Construct\ a\ new\ EmergencyRoom\ object,\ setting\ up\ the\ GUI\n
+comment10.params=
+comment10.target=int\ randomPriority()
+comment10.text=\ \ (COMPLETION)\n\ Returns\ a\ random\ priority\ 1\ -\ 3\n\ Probability\ of\ a\ priority\ 1\ patient\ should\ be\ probPri1\n\ Probability\ of\ a\ priority\ 2\ patient\ should\ be\ probPri2\n\ Probability\ of\ a\ priority\ 3\ patient\ should\ be\ (1-probPri1-probPri2)\n
+comment11.params=arguments
+comment11.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ setupGUI()
+comment3.params=
+comment3.target=void\ reset()
+comment3.text=\n\ Define\ the\ departments\ available\ and\ put\ them\ in\ the\ map\ of\ departments.\n\ Each\ department\ needs\ to\ have\ a\ name\ and\ a\ maximum\ number\ of\ patients\ that\n\ it\ can\ be\ treating\ at\ the\ same\ time.\n\ Simple\ version\:\ just\ a\ collection\ of\ 5\ ER\ beds.\n
+comment4.params=
+comment4.target=void\ setupSummary()
+comment5.params=
+comment5.target=void\ run()
+comment5.text=\n\ Main\ loop\ of\ the\ simulation\n
+comment6.params=p
+comment6.target=void\ discharge(Patient)
+comment6.text=\n\ Report\ that\ a\ patient\ has\ been\ discharged,\ along\ with\ any\n\ useful\ statistics\ about\ the\ patient\n
+comment7.params=
+comment7.target=void\ reportStatistics()
+comment7.text=\n\ Report\ summary\ statistics\ about\ the\ simulation\n
+comment8.params=list
+comment8.target=int\ computeAve(java.util.ArrayList)
+comment8.text=\n\ Computes\ the\ average\ wait\ time\ for\ the\ given\ list.\ \n
+comment9.params=
+comment9.target=void\ redraw()
+comment9.text=\n\ Redraws\ all\ the\ departments\n
+numComments=12

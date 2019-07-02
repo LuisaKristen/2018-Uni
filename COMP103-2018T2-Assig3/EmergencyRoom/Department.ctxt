@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Department
+comment0.text=\n\ A\ treatment\ Department\ (operating\ theatre,\ X-ray\ room,\ \ ER\ bed,\ Ultrasound,\ etc)\n\ Each\ department\ has\n\ -\ A\ name,\n\ -\ A\ maximum\ number\ of\ patients\ that\ can\ be\ treated\ at\ the\ same\ time\n\ -\ A\ Set\ of\ Patients\ that\ are\ currently\ being\ treated\n\ -\ A\ Queue\ of\ Patients\ waiting\ to\ be\ treated.\n\n\ FOR\ THE\ CORE\ AND\ COMPLETION,\ YOU\ CAN\ COMPLETE\ THE\ METHODS\ HERE,\n\ BUT\ DO\ NOT\ MODIFY\ ANY\ OF\ THE\ CODE\ THAT\ IS\ GIVEN\!\!\!\n
+comment1.params=name\ max
+comment1.target=Department(java.lang.String,\ int)
+comment1.text=\n\ Construct\ a\ new\ Department\ object\n\ Initialise\ the\ waiting\ queue\ and\ the\ current\ Set.\n
+comment2.params=
+comment2.target=java.util.Collection\ getCurrentPatients()
+comment2.text=\n\ Return\ the\ collection\ of\ patients\ currently\ being\ treated\n\ Note\:\ returns\ it\ as\ an\ unmodifiable\ collection\ -\ the\ calling\ code\n\ can\ step\ through\ the\ Patients,\ can\ call\ methods\ on\ the\ Patients,\n\ but\ can't\ add\ new\ patients\ to\ the\ set\ or\ remove\ patients\ from\ the\ set.\n
+comment3.params=
+comment3.target=java.util.Collection\ getWaitingPatients()
+comment3.text=\n\ Return\ the\ collection\ of\ patients\ waiting\ in\ the\ department\n\ Note\:\ returns\ it\ as\ an\ unmodifiable\ collection\ -\ the\ calling\ code\n\ can\ step\ through\ the\ Patients,\ but\ can't\ add\ to\ them\ or\ remove\ them.\n
+comment4.params=p
+comment4.target=void\ addPatient(Patient)
+comment4.text=\n\ A\ new\ patient\ for\ the\ department.\n\ Always\ starts\ by\ being\ put\ on\ the\ wait\ queue.\n
+comment5.params=
+comment5.target=void\ moveFromWaiting()
+comment5.text=\n\ Move\ patients\ off\ the\ wait\ queue\ (if\ any)\ into\ the\ set\ of\ patients\n\ being\ treated\ (if\ there\ is\ space\ -\ fewer\ than\ the\ maximum)\n
+comment6.params=p
+comment6.target=void\ removePatient(Patient)
+comment6.text=\n\ Move\ patient\ out\ of\ the\ department\n
+comment7.params=y
+comment7.target=void\ redraw(double)
+comment7.text=\n\ Draw\ the\ department\:\ the\ patients\ being\ treated\ and\ the\ patients\ waiting\ \n
+numComments=8
